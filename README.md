@@ -5,20 +5,20 @@ A custom implementation of Stable Diffusion for text-to-image and image-to-image
 This notebook implements a complete diffusion pipeline from scratch, providing full control over the image generation process with real-time monitoring and debugging capabilities.
 
 ## Features
-*Text-to-Image Generation: Create images from text prompts using CLIP embeddings
-*Image-to-Image Generation: Transform existing images based on text descriptions
-*Apple Silicon Optimization: Leverages MPS (Metal Performance Shaders) for GPU acceleration
-*Real-time Monitoring: Track latent norm progression and detect generation instability
-*Memory Management: Efficient memory usage with automatic cache clearing
-*Intermediate Visualization: Save and display images at each denoising step
-*Classifier-free Guidance: Enhanced prompt adherence and image quality
+* Text-to-Image Generation: Create images from text prompts using CLIP embeddings
+* Image-to-Image Generation: Transform existing images based on text descriptions
+* Apple Silicon Optimization: Leverages MPS (Metal Performance Shaders) for GPU acceleration
+* Real-time Monitoring: Track latent norm progression and detect generation instability
+* Memory Management: Efficient memory usage with automatic cache clearing
+* Intermediate Visualization: Save and display images at each denoising step
+* Classifier-free Guidance: Enhanced prompt adherence and image quality
 
 ## Core Components
 
-CLIP: Text Encoder	Converts text prompts to embeddings
-VAE: (Variational Autoencoder)	Encodes/decodes between image and latent space
-U-Net:	Core denoising model for diffusion process
-LMS Scheduler:	Controls noise removal schedule
+* CLIP: Text Encoder; Converts text prompts to embeddings
+* VAE: (Variational Autoencoder); Encodes/decodes between image and latent space
+* U-Net: Core denoising model for diffusion process
+* LMS Scheduler: Controls noise removal schedule
 
 ## Installation
 
