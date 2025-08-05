@@ -71,7 +71,23 @@ The pipeline includes built-in monitoring:
 * Memory Usage: Automatic GPU memory management
 
 ## Example Output
-TBD
+The img2img generation is not ideal because it will not generate photos that retain original characteristics while adding new ones as well. However, the text-to-image functionality is adequate and should be further tuned to understand how to approach performances seen in popular open-source models. Below is an example of parameters, the prompt, and the resulting image generation flow.
+
+```
+images = generate_image(prompts=["A dachshund dog on a Napoli street, wearing a red bandana, sharp focus on face, high detail, photorealistic, with Mount Vesuvius erupting in the background"], 
+                        g=7.5, # guidance (0-20); g=7.5 is optimal for text-to-image; g>9 is optimal for img2img
+                        seed=456,
+                        steps=30, 
+                        save_int=True, 
+                        input_image=None, 
+                        strength=1.0,  # Denoising strength for img2img; Low strength = preserve original, High strength = more transformation
+                        scheduler=scheduler,
+                        unet=unet,
+                        tokenizer=tokenizer
+                        )
+```
+
+<img src="https://github.com/mwheeler235/its-bananas/blob/main/images/image_steps_dachshund_napoli" width=100% height=100%>
 
 ## Hardware Requirements
 Apple Silicon Mac (M1/M2/M3)
