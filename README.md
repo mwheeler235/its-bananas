@@ -87,7 +87,7 @@ images = generate_image(prompts=["A dachshund dog on a Napoli street, wearing a 
                         )
 ```
 
-<img src="https://github.com/mwheeler235/its-bananas/blob/main/images/image_steps_dachshund_napoli" width=100% height=100%>
+<img src="https://github.com/mwheeler235/its-bananas/blob/main/image_steps_dachshund_napoli" width=100% height=100%>
 
 ## Hardware Requirements
 Apple Silicon Mac (M1/M2/M3)
