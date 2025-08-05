@@ -49,17 +49,18 @@ images = generate_image(
 
 ## Parameters
 ### Parameter / Range / Description
-g;	1.0-20.0;	Guidance scale (higher = more prompt adherence)
-strength;	0.0-1.0;	Image transformation strength (img2img only)
-steps;	10-100;	Number of denoising steps (more = higher quality)
-seed;	Any int;	Random seed for reproducible results
+* g:	1.0-20.0;	Guidance scale (higher = more prompt adherence)
+* strength:	0.0-1.0;	Image transformation strength (img2img only)
+* steps:	10-100;	Number of denoising steps (more = higher quality)
+* seed:	Any int;	Random seed for reproducible results
+* input_image: path to image or None; If None, then director text-to-image will be employed
 
 ## Key Functions
-generate_image(): Main generation function with full parameter control
-text_encode(): Convert prompts to CLIP embeddings
-convert_pil_to_latents(): Encode images to latent space
-convert_latents_to_pil(): Decode latents back to viewable images
-clear_memory(): Memory management for Apple Silicon
+* generate_image(): Main generation function with full parameter control
+* text_encode(): Convert prompts to CLIP embeddings
+* convert_pil_to_latents(): Encode images to latent space
+* convert_latents_to_pil(): Decode latents back to viewable images
+* clear_memory(): Memory management for Apple Silicon
 
 ## Monitoring & Debugging
 The pipeline includes built-in monitoring:
@@ -71,7 +72,6 @@ The pipeline includes built-in monitoring:
 
 ## Example Output
 TBD
-
 
 ## Hardware Requirements
 Apple Silicon Mac (M1/M2/M3)
